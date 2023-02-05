@@ -1,0 +1,53 @@
+#secondary {
+	margin: 1.5em 0 0;
+
+	ul {
+		list-style: none;
+
+
+	}
+
+	a {
+		color: #fff;
+	}
+
+}
+
+.sidenav {
+		
+	background: linear-gradient(45deg, #4099ff, #73b4ff);
+	border-radius: 10px 10px;
+	padding: 20px 0;
+
+	li {
+		transition: 1s all;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		padding: 5px;
+		margin-top: 0px;
+		color: #fff;
+		display: block;
+		border-top-right-radius: 10px 10px;
+		border-bottom-right-radius: 10px 10px;
+
+		&:hover {
+			transition: 1s all;
+			color: #2f89fc;
+			background-color: rgba(42, 56, 65, 0.82);
+			border-top-right-radius: 10px 10px;
+			border-bottom-right-radius: 10px 10px;
+			cursor: pointer;
+		}
+	}
+
+}
+
+
+.widget {
+	margin: 0 0 1.5em;
+
+	// Make sure select elements fit in widgets.
+	select {
+		max-width: 100%;
+	}
+}

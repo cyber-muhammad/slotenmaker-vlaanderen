@@ -1,0 +1,64 @@
+#hero {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fbff;
+    
+    .title {
+
+        h1 {
+            font-size: 36px;
+            line-height: 36px;
+            margin: 0 0 32px;
+
+            @media (max-width: $sm) {
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .orange {
+        color: $secondary;
+    }
+
+    .blue {
+        color: $primary;
+        margin-bottom: 10px;
+    }
+
+    .checks {
+        
+        span {
+            font-weight: bold;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 16px;
+
+            li {
+                
+                margin-bottom: 16px;
+                font-weight: 300px;
+
+                .fa-check {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    img {
+        border-radius: 5px;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:nth-child(2) {
+            color: black;
+        }
+    }
+}

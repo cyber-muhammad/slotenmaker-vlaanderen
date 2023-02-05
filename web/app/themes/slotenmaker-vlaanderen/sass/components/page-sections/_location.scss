@@ -1,0 +1,97 @@
+
+
+#location {
+    padding: 60px 0;    
+    overflow: hidden;
+
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-weight: 500;
+        line-height: 32px;
+        font-size: 24px;
+    }
+
+    
+    li:nth-child(2n+1) a { --color: #4cdec0; }
+    li:nth-child(odd) a { --color: #69afff; }
+    li:nth-child(4n+1) a { --color: #FF5F30; }
+    li:nth-child(even) a { --color: #4cdec0; }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .cloud {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            line-height: 2.5rem;
+        }
+
+        a[data-weight="1"] { --size: 1; }
+        a[data-weight="2"] { --size: 2; }
+        a[data-weight="3"] { --size: 3; }
+        a[data-weight="4"] { --size: 4; }
+        a[data-weight="5"] { --size: 5; }
+        a[data-weight="6"] { --size: 6; }
+        a[data-weight="7"] { --size: 7; }
+        a[data-weight="8"] { --size: 8; }
+        a[data-weight="9"] { --size: 9; }
+        
+        a {
+            --size: 4;
+            font-size: calc(var(--size) * 0.25rem + 0.5rem);
+            color: var(--color);
+            display: block;
+            padding: 0.125rem 0.25rem;
+            text-decoration: none;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 0;
+                height: 100%;
+                background: var(--color);
+                transform: translate(-50%, 0);
+                opacity: 0.15;
+                transition: width 0.25s;
+            }
+
+            &:focus::before, &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #69afff;
+        font-size: 14px;
+
+        .fa-location-dot {
+            margin-right: 5px;
+        }
+
+        &:hover {
+            color: #FF5F30;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.site-main {
+    color: #4b4b4b;
+    font-size: 18px;
+	margin: 0 20px;
+
+    a {
+        color: $secondary;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+	.sticky {
+		display: block;
+	}
+	
+	.post,
+	
+	.updated:not(.published) {
+		display: none;
+	}
+	
+	.page-content,
+	.entry-content,
+	.entry-summary {
+		margin: 1.5em 0 0;
+	}
+	
+	.page-links {
+		clear: both;
+		margin: 0 0 1.5em;
+	}
+}

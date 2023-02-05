@@ -1,0 +1,79 @@
+#colophon {
+
+    background-color: #f8f8f8;
+    padding: 100px 0 0 0;
+    font-size: 14px;
+
+    .foo-topbar {
+
+        color: #f8f8f8;
+        margin-bottom: 40px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            :first-child{
+                padding-top: 0px;
+            }
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+
+            .svg-inline--fa {
+                font-size: 12px;
+                margin-right: 10px;
+            }
+        }
+        
+    }
+
+    h4 {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .foo-links {
+        .social-links {
+            .svg-inline--fa {
+                color: $secondary;
+                font-size: 32px;
+                margin-right: 10px;
+                max-width: 32px;
+            }
+            
+        }
+        
+        .my-btn {
+            color: #fff;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #51565c;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+    
+    .bottom-bar {
+        margin-top: 30px;
+        background-color: #dddddd;
+    }
+        
+}
